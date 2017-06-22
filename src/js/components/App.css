@@ -1,0 +1,35 @@
+
+input:placeholder {
+  color: rgb(88, 82, 59);
+  font-size: 12pt;
+}
+
+/* Social Media header start */
+
+.twitter-share-button {
+  display: inline;
+  margin-left: 3px;
+  vertical-align: bottom;
+  margin-top: 5px;
+}
+
+
+
+
+.blurb {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 15pt;
+}
+.highlight {
+  color: rgb(232, 171, 53);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20pt;
+}
+
+
+
+
+
+
