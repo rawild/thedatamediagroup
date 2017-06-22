@@ -1,15 +1,6 @@
 import React, {Component} from 'react'
-import Countdown from './Countdown'
-import './App.css';
-import MediaForm from './MediaForm'
-import SocialMedia from './SocialMedia'
-import CalltoAction from './CalltoAction'
+import './App.css'
 import Block from './Block'
-import Calendar from './Calendar'
-import Footer from './Footer'
-import LinkButton from './LinkButton'
-import Modal from './Modal'
-import OpenModal from '../containers/OpenModal'
 import { Textfit } from 'react-textfit'
 
 import Data from "../../img/data-pattern-2024196.png"
