@@ -1,11 +1,12 @@
 import React,{Component} from 'react'
+import colors from "../../styles/styles"
 export default class Footer extends Component {
   render(){
     const STYLES = {
       footer: {
         paddingTop: '50px',
         paddingBottom: '50px',
-        backgroundColor: '#142c74',
+        backgroundColor: colors.primaryGreen,
         color: 'white',
         width: '100%',
         textAlign: 'center'
@@ -14,12 +15,9 @@ export default class Footer extends Component {
 
     }
     return(<div className="footer" style={STYLES.footer}>
-      Questions? Interested in helping out? healthcare4allny(at)gmail.com
-    
+      Questions? info(a)thedatamediagroup.com
+
     </div>
     )
-  }
-  _goto = (url) => {
-    window.open(url)
   }
 }

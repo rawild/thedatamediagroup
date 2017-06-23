@@ -1,5 +1,6 @@
 {
   "name": "thedatamediagroup",
+  "homepage": "https://rawild.github.io/thedatamediagroup",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,6 @@
     "redux": "^3.6.0",
     "redux-immutable": "^3.0.11",
     "react-textfit": "^0.1.9"
-  
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",

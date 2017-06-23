@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './App.css'
 import Block from './Block'
+import Image from './Image'
+import Footer from './Footer'
 import { Textfit } from 'react-textfit'
 
 import Data from "../../img/data-pattern-2024196.png"
@@ -37,9 +39,18 @@ const STYLES = {
   },
   Section2: {
     height: 'auto',
-    backgroundColor: 'white',
-    color: '#142c74',
-    width: '100%'
+    color: colors.primaryBlue,
+    width: '80%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '30px',
+    borderColor: colors.primaryGreen,
+    borderRadius: '8pt',
+    borderWidth: '3px',
+    borderStyle: 'solid',
+    padding: '20px',
+    textAlign: 'center',
+    fontSize: '20pt',
   },
   embeddedLink: {
     color: 'inherit !important'
@@ -52,31 +63,39 @@ const STYLES = {
     verticalAlign: 'top',
     textAlign: 'center'
   },
-  interlude3: {
-    fontSize: '40pt',
-    color: colors.primaryBlue,
-    display: 'inline',
-  },
-  interlude4: {
-    fontSize: '40pt',
+  header: {
+    fontSize: '80pt',
     color: colors.primaryRed,
-    display: 'inline'
+    borderBottom: 'solid',
+    borderColor: colors.primaryGreen,
+    display: 'block',
+    marginBottom: '20px'
   },
   interlude5: {
     fontSize: '40pt',
     color: colors.primaryGray,
     display: 'inline'
   },
-  img: {
-    display: 'inline',
-    width: '200px',
-    margin: '40px'
-  },
-  block: {
-    paddingBottom: '40px',
+  leadBlock: {
+    paddingTop: '40px',
+    paddingBottom: '80px',
     fontSize: '20pt',
     color: colors.primaryBlue
+  },
+  imageBlock: {
+    textAlign: 'center'
+  },
+  text: {
+    textAlign: 'left',
+    paddingLeft: '5%',
+    paddingRight: '5%'
+  },
+  list: {
+    paddingLeft: '35%',
+
   }
+  
+  
 }
 class App extends Component {
   
@@ -90,25 +109,40 @@ class App extends Component {
           The Data Media Group
         </Textfit>
       </div> 
-      <Block>
-        <img style={STYLES.img} src={Book} />
-        <img style={STYLES.img} src={Data} />
-        <img style={STYLES.img} src={Analysis} />
-      </Block>
-      <Block >
-        <span style={STYLES.interlude3}>Your stories. </span>
-        <span style={STYLES.interlude4}>Your data. </span>
-        <span style={STYLES.interlude5}>Your analysis...</span>
+      <Block style={STYLES.imageBlock}>
+        <Image image={Book} caption="Your stories." 
+        captionStyle={{fontSize: '40pt',
+        color: colors.primaryBlue,
+        display: 'block'}}/>
+        <Image image={Data} caption="Your data." captionStyle={{fontSize: '40pt',
+        color: colors.primaryRed,
+        display: 'block', }} />
+        <Image image={Analysis} caption="Your analysis..." captionStyle={{fontSize: '40pt',
+        color: colors.primaryGray,
+        display: 'block', }}/>
       </Block>
       <Block backgroundColor={colors.secondaryBlue}>
         <span style={STYLES.interlude2}> Online </span>
       </Block>
       <Block >
-        <div style={STYLES.block}>
+        <div style={STYLES.leadBlock}>
         From news stories to policy reports, we provide you an affordable way to make sure your message is available
         to online readers and shareable in the world of social media.
         </div>
       </Block>
+      <Block style={STYLES.Section2}>
+        <span style={STYLES.header}>Curious?</span>
+        <div style={STYLES.text}>
+          There is still space in our pilot program for organizations interested bringing their published materials online with us.
+          To submit an application please email the materials below to info(a)thedatamediagroup.com: 
+          <ul style={STYLES.list}>
+          <li>a description of your organization</li>
+          <li>the target audience of the publication</li>
+          <li>a pdf of the publication</li>
+          </ul>
+        </div>
+      </Block>
+      <Footer/>
     </div>);
   }
 }
