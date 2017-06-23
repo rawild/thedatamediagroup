@@ -9,7 +9,7 @@ import Data from "../../img/data-pattern-2024196.png"
 import Book from "../../img/book-311812.svg"
 import Analysis from "../../img/facebook-analytics-2265786.png"
 import colors from "../../styles/styles"
-
+/*TODO: make fontSizes responsive and clean out errors*/
 const STYLES = {
   App: {
     textAlign: 'center',
