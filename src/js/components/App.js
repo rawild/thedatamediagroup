@@ -91,7 +91,7 @@ const STYLES = {
     paddingRight: '5%'
   },
   list: {
-    paddingLeft: '35%',
+    paddingLeft: '25%',
 
   }
   
