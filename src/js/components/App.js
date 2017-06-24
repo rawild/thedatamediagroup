@@ -9,7 +9,7 @@ import Data from "../../img/data-pattern-2024196.png"
 import Book from "../../img/book-311812.svg"
 import Analysis from "../../img/facebook-analytics-2265786.png"
 import colors from "../../styles/styles"
-
+/*TODO: make fontSizes responsive and clean out errors*/
 const STYLES = {
   App: {
     textAlign: 'center',
@@ -26,7 +26,8 @@ const STYLES = {
     paddingLeft: '10%',
     paddingRight: '10%',
     textAlign: 'center',
-    width: '80%'
+    width: '80%',
+    fontFamily: 'Acme, sans-serif, bold'
   },
   Transition1: {
     height: 'auto',
@@ -61,7 +62,8 @@ const STYLES = {
     padding: '40px',
     color: 'white',
     verticalAlign: 'top',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'Acme, sans-serif, bold'
   },
   header: {
     fontSize: '80pt',
@@ -69,7 +71,8 @@ const STYLES = {
     borderBottom: 'solid',
     borderColor: colors.primaryGreen,
     display: 'block',
-    marginBottom: '20px'
+    marginBottom: '20px',
+    fontFamily: 'Acme, sans-serif, bold'
   },
   interlude5: {
     fontSize: '40pt',
@@ -113,13 +116,13 @@ class App extends Component {
         <Image image={Book} caption="Your stories." 
         captionStyle={{fontSize: '40pt',
         color: colors.primaryBlue,
-        display: 'block'}}/>
+        display: 'block', fontFamily: 'Acme, sans-serif, bold'}}/>
         <Image image={Data} caption="Your data." captionStyle={{fontSize: '40pt',
         color: colors.primaryRed,
-        display: 'block', }} />
+        display: 'block', fontFamily: 'Acme, sans-serif, bold'}} />
         <Image image={Analysis} caption="Your analysis..." captionStyle={{fontSize: '40pt',
         color: colors.primaryGray,
-        display: 'block', }}/>
+        display: 'block', fontFamily: 'Acme, sans-serif, bold'}}/>
       </Block>
       <Block backgroundColor={colors.secondaryBlue}>
         <span style={STYLES.interlude2}> Online </span>
