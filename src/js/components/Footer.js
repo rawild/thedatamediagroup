@@ -1,12 +1,13 @@
 import React,{Component} from 'react'
-import colors from "../../styles/styles"
+import styles from "../../styles/styles"
 export default class Footer extends Component {
   render(){
     const STYLES = {
       footer: {
+        marginTop: '30px',
         paddingTop: '50px',
         paddingBottom: '50px',
-        backgroundColor: colors.primaryGreen,
+        backgroundColor: styles.colors.primaryGreen,
         color: 'white',
         width: '100%',
         textAlign: 'center'
