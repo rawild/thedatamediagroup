@@ -8,7 +8,7 @@ import { Textfit } from 'react-textfit'
 import Data from "../../img/data-pattern-2024196.png"
 import Book from "../../img/book-311812.svg"
 import Analysis from "../../img/facebook-analytics-2265786.png"
-import colors from "../../styles/styles"
+import styles from "../../styles/styles"
 /*TODO: make fontSizes responsive and clean out errors*/
 const STYLES = {
   App: {
@@ -20,14 +20,14 @@ const STYLES = {
     display: 'block'
   },
   Section1: {
-    backgroundColor: colors.primaryGreen,
+    backgroundColor: styles.colors.primaryGreen,
     color: 'white',
     paddingTop: '80px',
     paddingLeft: '10%',
     paddingRight: '10%',
     textAlign: 'center',
     width: '80%',
-    fontFamily: 'Acme, sans-serif, bold'
+    fontFamily: styles.fonts.header
   },
   Transition1: {
     height: 'auto',
@@ -40,18 +40,29 @@ const STYLES = {
   },
   Section2: {
     height: 'auto',
-    color: colors.primaryBlue,
+    color: styles.colors.primaryBlue,
     width: '80%',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: '30px',
-    borderColor: colors.primaryGreen,
+    borderColor: styles.colors.primaryGreen,
     borderRadius: '8pt',
     borderWidth: '3px',
     borderStyle: 'solid',
     padding: '20px',
     textAlign: 'center',
-    fontSize: '20pt',
+    fontSize: '20pt'
+  },
+  Section3: {
+    height: 'auto',
+    color: styles.colors.primaryBlue,
+    width: '80%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '30px',
+    padding: '20px',
+    textAlign: 'center',
+    fontSize: '20pt'
   },
   embeddedLink: {
     color: 'inherit !important'
@@ -63,27 +74,34 @@ const STYLES = {
     color: 'white',
     verticalAlign: 'top',
     textAlign: 'center',
-    fontFamily: 'Acme, sans-serif, bold'
+    fontFamily: styles.fonts.header
   },
-  header: {
+  header2: {
     fontSize: '80pt',
-    color: colors.primaryRed,
+    color: styles.colors.primaryRed,
     borderBottom: 'solid',
-    borderColor: colors.primaryGreen,
+    borderColor: styles.colors.primaryGreen,
     display: 'block',
     marginBottom: '20px',
-    fontFamily: 'Acme, sans-serif, bold'
+    fontFamily: styles.fonts.header
+  },
+  header3: {
+    fontSize: '80pt',
+    color: styles.colors.primaryGreen,
+    display: 'block',
+    marginBottom: '20px',
+    fontFamily: styles.fonts.header
   },
   interlude5: {
     fontSize: '40pt',
-    color: colors.primaryGray,
+    color: styles.colors.primaryGray,
     display: 'inline'
   },
   leadBlock: {
     paddingTop: '40px',
     paddingBottom: '80px',
     fontSize: '20pt',
-    color: colors.primaryBlue
+    color: styles.colors.primaryBlue
   },
   imageBlock: {
     textAlign: 'center'
@@ -115,35 +133,39 @@ class App extends Component {
       <Block style={STYLES.imageBlock}>
         <Image image={Book} caption="Your stories." 
         captionStyle={{fontSize: '40pt',
-        color: colors.primaryBlue,
-        display: 'block', fontFamily: 'Acme, sans-serif, bold'}}/>
+        color: styles.colors.primaryBlue,
+        display: 'block', fontFamily: styles.fonts.header}}/>
         <Image image={Data} caption="Your data." captionStyle={{fontSize: '40pt',
-        color: colors.primaryRed,
-        display: 'block', fontFamily: 'Acme, sans-serif, bold'}} />
-        <Image image={Analysis} caption="Your analysis..." captionStyle={{fontSize: '40pt',
-        color: colors.primaryGray,
-        display: 'block', fontFamily: 'Acme, sans-serif, bold'}}/>
+        color: styles.colors.primaryRed,
+        display: 'block', fontFamily: styles.fonts.header}} />
+        <Image image={Analysis} caption="Your analysis." captionStyle={{fontSize: '40pt',
+        color: styles.colors.primaryGray,
+        display: 'block', fontFamily: styles.fonts.header}}/>
       </Block>
-      <Block backgroundColor={colors.secondaryBlue}>
+      <Block backgroundColor={styles.colors.secondaryBlue}>
         <span style={STYLES.interlude2}> Online </span>
       </Block>
       <Block >
         <div style={STYLES.leadBlock}>
-        From news stories to policy reports, we provide you an affordable way to make sure your message is available
-        to online readers and shareable in the world of social media.
+        From news stories to policy reports, we get your message online and help it reach readers where they are on social media.
         </div>
       </Block>
       <Block style={STYLES.Section2}>
-        <span style={STYLES.header}>Curious?</span>
+        <span style={STYLES.header2}>Curious?</span>
         <div style={STYLES.text}>
-          There is still space in our pilot program for organizations interested bringing their published materials online with us.
-          To submit an application please email the materials below to info(a)thedatamediagroup.com: 
+          There is still space in our pilot program for organizations to bring their published materials online with us.
+          To apply, please email the materials below to: info(a)thedatamediagroup.com 
           <ul style={STYLES.list}>
           <li>a description of your organization</li>
           <li>the target audience of the publication</li>
           <li>a pdf of the publication</li>
           </ul>
         </div>
+      </Block>
+      <Block style={STYLES.Section3}>
+        <span style={STYLES.header3}>Who Are We?</span>
+        We are a young start-up currently based in Berlin, but shortly to be somewhere on the east coast of America. 
+        The founders are two women: one programmer, one journalist. Both American. Both Margaret Atwood fans before it was cool.
       </Block>
       <Footer/>
     </div>);

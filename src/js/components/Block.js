@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-
+import styles from '../../styles/styles'
 export default class Block extends Component {
 
   render() {
@@ -15,8 +15,9 @@ export default class Block extends Component {
       textAlign: 'center',
       borderRadius: '8px',
       title : {
-        'fontSize': '100pt',
-        'marginTop': '50px'
+        'fontSize': '80pt',
+        'marginTop': '50px',
+        fontFamily: styles.fonts.header
       },
       subtitle : {
         'fontSize': '50pt',
