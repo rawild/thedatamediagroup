@@ -3,9 +3,9 @@ const styles= {
     primaryGray: 'rgba(140, 137, 137, 0.66)',
     primaryGreen: '#9e87f2',
     periwinkle: 'rgb(142, 169, 247)',
-    primaryRed: 'rgb(253, 129, 130)',
-    primaryBlue: '#1da1f2',
-    secondaryBlue: '#1da1f2'
+    primaryRed: '#43dbb2',
+    primaryBlue: '#003F7F',
+    secondaryBlue: '#003F7F'
   },
   fonts: {
     header: 'Acme, sans-serif, bold',
