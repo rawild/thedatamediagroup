@@ -1,9 +1,9 @@
 const styles= {
   colors : {
     primaryGray: 'rgba(140, 137, 137, 0.66)',
-    primaryGreen: '#9e87f2',
+    primaryPurple: '#9e87f2',
     periwinkle: 'rgb(142, 169, 247)',
-    primaryRed: '#43dbb2',
+    primaryGreen: '#43dbb2',
     primaryBlue: '#003F7F',
     secondaryBlue: '#003F7F'
   },

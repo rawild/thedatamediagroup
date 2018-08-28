@@ -20,7 +20,7 @@ const STYLES = {
     display: 'block'
   },
   Section1: {
-    backgroundColor: styles.colors.primaryGreen,
+    backgroundColor: styles.colors.primaryPurple,
     color: 'white',
     paddingTop: '80px',
     paddingLeft: '10%',
@@ -45,7 +45,7 @@ const STYLES = {
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: '30px',
-    borderColor: styles.colors.primaryGreen,
+    borderColor: styles.colors.primaryPurple,
     borderRadius: '8pt',
     borderWidth: '3px',
     borderStyle: 'solid',
@@ -78,16 +78,16 @@ const STYLES = {
   },
   header2: {
     fontSize: '80pt',
-    color: styles.colors.primaryRed,
+    color: styles.colors.primaryBlue,
     borderBottom: 'solid',
-    borderColor: styles.colors.primaryGreen,
+    borderColor: styles.colors.primaryPurple,
     display: 'block',
     marginBottom: '20px',
     fontFamily: styles.fonts.header
   },
   header3: {
     fontSize: '80pt',
-    color: styles.colors.primaryGreen,
+    color: styles.colors.primaryPurple,
     display: 'block',
     marginBottom: '20px',
     fontFamily: styles.fonts.header
@@ -136,7 +136,7 @@ class App extends Component {
         color: styles.colors.primaryBlue,
         display: 'block', fontFamily: styles.fonts.header}}/>
         <Image image={Data} caption="Your data." captionStyle={{fontSize: '40pt',
-        color: styles.colors.primaryRed,
+        color: styles.colors.primaryGreen,
         display: 'block', fontFamily: styles.fonts.header}} />
         <Image image={Analysis} caption="Your analysis." captionStyle={{fontSize: '40pt',
         color: styles.colors.primaryGray,

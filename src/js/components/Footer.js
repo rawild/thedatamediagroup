@@ -7,7 +7,7 @@ export default class Footer extends Component {
         marginTop: '30px',
         paddingTop: '50px',
         paddingBottom: '50px',
-        backgroundColor: styles.colors.primaryGreen,
+        backgroundColor: styles.colors.primaryPurple,
         color: 'white',
         width: '100%',
         textAlign: 'center'
@@ -16,7 +16,7 @@ export default class Footer extends Component {
 
     }
     return(<div className="footer" style={STYLES.footer}>
-      Questions? info(a)thedatamediagroup.com
+      Questions? info(at)thedatamediagroup.com
 
     </div>
     )
