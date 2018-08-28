@@ -154,7 +154,7 @@ class App extends Component {
         <span style={STYLES.header2}>Curious?</span>
         <div style={STYLES.text}>
           There is still space in our pilot program for organizations to bring their published materials online with us.
-          To apply, please email the materials below to: info(a)thedatamediagroup.com 
+          To apply, please email the materials below to: info(at)thedatamediagroup.com 
           <ul style={STYLES.list}>
           <li>a description of your organization</li>
           <li>the target audience of the publication</li>
@@ -164,8 +164,7 @@ class App extends Component {
       </Block>
       <Block style={STYLES.Section3}>
         <span style={STYLES.header3}>Who Are We?</span>
-        We are a young start-up currently based in Berlin, but shortly to be somewhere on the east coast of America. 
-        The founders are two women: one programmer, one journalist. Both American. Both Margaret Atwood fans before it was cool.
+        We are a young start-up currently based in Brooklyn. 
       </Block>
       <Footer/>
     </div>);
