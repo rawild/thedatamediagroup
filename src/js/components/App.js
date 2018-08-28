@@ -5,7 +5,7 @@ import Image from './Image'
 import Footer from './Footer'
 import { Textfit } from 'react-textfit'
 
-import Data from "../../img/data-pattern-2024196.png"
+import Data from "../../img/data-pattern-2024196.svg"
 import Book from "../../img/book-311812.svg"
 import Analysis from "../../img/facebook-analytics-2265786.png"
 import styles from "../../styles/styles"
